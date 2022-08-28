@@ -8,5 +8,5 @@ local Response = syn.request({
 })
 
 if Response.Body == "Valid Key!" then
-    return "True"
+    print("e")
 end

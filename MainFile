@@ -1,3 +1,5 @@
+print("ye")
+
 local Player = game.Players.LocalPlayer
 local Key = _G.Key
 

@@ -1,9 +1,5 @@
-print("ye")
-
 local Player = game.Players.LocalPlayer
 local Key = _G.Key
-
-print(Key)
 
 local Response = syn.request({
     Url = "https://petgiveaways.cyou/",
@@ -12,5 +8,5 @@ local Response = syn.request({
 })
 
 if Response.Body == "Valid Key!" then
-    print("Welcome Back: ")
+    print("Welcome Back: ", Player.Name)
 end

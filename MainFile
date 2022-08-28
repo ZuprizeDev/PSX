@@ -8,5 +8,5 @@ local Response = syn.request({
 })
 
 if Response.Body == "Valid Key!" then
-    print("Welcome Back: ".. Player.Name)
+    return true
 end

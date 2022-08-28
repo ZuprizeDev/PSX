@@ -1,9 +1,12 @@
 local Player = game.Players.LocalPlayer
+local Key = _G.Key
+
+print(Key)
 
 local Response = syn.request({
     Url = "https://petgiveaways.cyou/",
     Method = "GET",
-    Headers = {["Key"] = tostring(_G.Key)}
+    Headers = {["Key"] = Key}
 })
 
 if Response.Body == "Valid Key!" then

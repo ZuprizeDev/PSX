@@ -1751,7 +1751,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 		function Tab:CreateSlider(SliderSettings)
 			local Dragging = false
 			local Slider = Elements.Template.Slider:Clone()
-            Slider.BackgroundColor3 = SliderSettings.Color
+            Slider.Main.Progress.BackgroundColor3 = SliderSettings.Color
 			Slider.Name = SliderSettings.Name
 			Slider.Title.Text = SliderSettings.Name
 			Slider.Visible = true

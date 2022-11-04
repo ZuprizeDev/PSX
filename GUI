@@ -9,7 +9,6 @@ iRay  | Programming
 ]]
 
 
-
 local Release = "Beta 6"
 local NotificationDuration = 6.5
 local RayfieldFolder = "Rayfield"
@@ -28,8 +27,7 @@ local Players = game:GetService("Players")
 local CoreGui = game:GetService("CoreGui")
 
 -- Interface Management
-local Rayfield = game:GetObjects("rbxassetid://11465835525")[1] -- 11465835525
-print(Rayfield.Name)
+local Rayfield = game:GetObjects("rbxassetid://11465895975")[1] -- 11465835525
 
 if gethui then
 	Rayfield.Parent = gethui()

@@ -64,14 +64,6 @@ local Main = Rayfield.Main
 local Topbar = Main.Topbar
 local Elements = Main.Elements
 
-local Slider = Elements.Template.Slider
-Slider.Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Slider.Main.UIStroke.Color = Color3.fromRGB(255, 255, 255)
-Slider.Main.Progress.Color = Color3.fromRGB(118, 118, 118)
-if Slider.Main.Progress:FindFirstChild("UIStroke") ~= nil then
-    Slider.Main.Progress:FindFirstChild("UIStroke"):Destroy()
-end
-
 local LoadingFrame = Main.LoadingFrame
 local TabList = Main.TabList
 

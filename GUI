@@ -27,7 +27,7 @@ local Players = game:GetService("Players")
 local CoreGui = game:GetService("CoreGui")
 
 -- Interface Management
-local Rayfield = game:GetObjects("rbxassetid://11465969489")[1] -- 11465835525
+local Rayfield = game:GetObjects("rbxassetid://11465995470")[1] -- 11465835525
 
 if gethui then
 	Rayfield.Parent = gethui()
@@ -735,7 +735,8 @@ end
 function RayfieldLibrary:CreateWindow(Settings)
 	local Passthrough = false
 	Topbar.Title.Text = Settings.Name
-	Main.Size = UDim2.new(0, 562, 0, 475)--UDim2.new(0, 450, 0, 260)
+
+	Main.Size = UDim2.new(0, 450, 0, 260)
 	Main.Visible = true
 	Main.BackgroundTransparency = 1
 	LoadingFrame.Title.TextTransparency = 1

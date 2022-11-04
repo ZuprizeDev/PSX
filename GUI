@@ -736,13 +736,17 @@ end
 function RayfieldLibrary:CreateWindow(Settings)
 	local Passthrough = false
 	Topbar.Title.Text = Settings.Name
-	Main.Size = UDim2.new(0, 450, 0, 260)
+
+	local Slider = Elements.Template.Slider
+
     Slider.Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     Slider.Main.UIStroke.Color = Color3.fromRGB(255, 255, 255)
     Slider.Main.Progress.Color = Color3.fromRGB(118, 118, 118)
     if Slider.Main.Progress:FindFirstChild("UIStroke") ~= nil then
         Slider.Main.Progress:FindFirstChild("UIStroke"):Destroy()
     end
+
+	Main.Size = UDim2.new(0, 450, 0, 260)
 	Main.Visible = true
 	Main.BackgroundTransparency = 1
 	LoadingFrame.Title.TextTransparency = 1
@@ -757,8 +761,6 @@ function RayfieldLibrary:CreateWindow(Settings)
 	Topbar.Visible = false
 	Elements.Visible = false
 	LoadingFrame.Visible = true
-	
-	local Slider = Elements.Template.Slider
 
 	pcall(function()
 		if not Settings.ConfigurationSaving.FileName then

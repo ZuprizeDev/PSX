@@ -68,6 +68,15 @@ local Elements = Main.Elements
 local LoadingFrame = Main.LoadingFrame
 local TabList = Main.TabList
 
+local Slider = Elements.Template.Slider
+
+Slider.Main.BackgroundColor3 = Color3.fromRGB(255,255, 255)
+Slider.Main.UIStroke.Color = Color3.fromRGB(255,255, 255)
+Slider.Main.Progress.Color = Color3.fromRGB(118, 118, 118)
+if Slider.Main.Progress:FindFirstChild("UIStroke") ~= nil then
+    Slider.Main.Progress:FindFirstChild("UIStroke"):Destroy()
+end
+
 Rayfield.DisplayOrder = 100
 LoadingFrame.Version.Text = Release
 
@@ -1751,14 +1760,6 @@ function RayfieldLibrary:CreateWindow(Settings)
 		function Tab:CreateSlider(SliderSettings)
 			local Dragging = false
 			local Slider = Elements.Template.Slider:Clone()
-
-            Slider.Main.BackgroundColor3 = Color3.fromRGB(255,255, 255)
-            Slider.Main.UIStroke.Color = Color3.fromRGB(255,255, 255)
-            Slider.Main.Progress.Color = Color3.fromRGB(118, 118, 118)
-            if Slider.Main.Progress:FindFirstChild("UIStroke") ~= nil then
-                Slider.Main.Progress:FindFirstChild("UIStroke"):Destroy()
-            end
-
 
 			Slider.Name = SliderSettings.Name
 			Slider.Title.Text = SliderSettings.Name

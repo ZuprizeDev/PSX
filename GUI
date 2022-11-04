@@ -1753,11 +1753,11 @@ function RayfieldLibrary:CreateWindow(Settings)
 			Slider.Title.Text = SliderSettings.Name
 			Slider.Visible = true
             Slider.Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            Slider.Main.UIStroke.Color = Color3.fromRGB(255, 255, 255)
-            Slider.Main.Progress.Color = Color3.fromRGB(118, 118, 118)
-            if Slider.Main.Progress:FindFirstChild("UIStroke") ~= nil then
-                Slider.Main.Progress:FindFirstChild("UIStroke"):Destroy()
-            end
+            --Slider.Main.UIStroke.Color = Color3.fromRGB(255, 255, 255)
+            --Slider.Main.Progress.Color = Color3.fromRGB(118, 118, 118)
+           -- if Slider.Main.Progress:FindFirstChild("UIStroke") ~= nil then
+           --     Slider.Main.Progress:FindFirstChild("UIStroke"):Destroy()
+           -- end
 
 			Slider.Parent = TabPage
 
